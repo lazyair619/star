@@ -1,0 +1,118 @@
+div.transbox{
+    width: 1000px;
+    height:500px;
+    margin:30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    text-align: center;
+    /* for IE */
+    filter:alpha(opacity=60);
+    /* CSS3 standard */
+    opacity:0.5;
+
+}
+@keyframes p {
+    from {
+        opacity: 0 ;
+    }
+    to {
+        opacity: 100;
+    }
+
+}
+
+#moon{
+    background-color:antiquewhite;
+    color:palevioletred;
+}
+
+img{opacity:0.5;
+    filter: alpha(opacity=50);
+
+}
+audio{
+    color:red;
+    position: fixed;
+    bottom: 0;
+    right:0;
+
+}
+.picTab div{margin:5px;color:black; }
+.pictab{height:500px;border:2px; solid-color:black; margin:50px auto;overflow:hidden;}
+
+#touming{
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    position: fixed;
+    top:0;
+    right:0;
+    height:75px;
+    weight:75px;
+}
+#touming:hover{
+    opacity: 1;
+    filter:alpha(opacity=100);
+}
+
+.x{
+.a:-webkit-any-link
+      color: -webkit-link;
+      cursor: pointer;
+      text-decoration: underline;
+      height:30px;
+      weight:10px;
+
+  }
+.h {
+. a: -webkit-any-link color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+    height: 30px;
+    weight:30px;
+}
+.v {
+. a: -webkit-any-link color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+    height: 30px;
+    weight:30px;
+}
+
+.cr-content {
+
+    font-size: 13px;
+    line-height: 1.54;
+    color: #333;
+    word-wrap: break-word;
+    word-break: normal;
+}
+p{
+    width:60px;
+    height:60px;
+    background-color:blanchedalmond;
+}
+p:hover{
+    width:90px;
+    height:90px;
+    transition-delay:300ms;
+    transition-duration: 1s;
+    animation-name:what;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color:cadetblue;
+}
+@keyframes what {
+ from{
+     width:60px;
+     height:60px;
+     background-color: burlywood;
+ }
+ to{
+     width:75px;
+     height:75px;
+     background-color:cadetblue;
+ }
+}
+
+
+
