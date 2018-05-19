@@ -1,3 +1,12 @@
+html{
+    height:100%;
+}
+body{
+    position: relative;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#fff));
+
+}
 div.transbox{
     width: 1000px;
     height:500px;
@@ -10,6 +19,23 @@ div.transbox{
     /* CSS3 standard */
     opacity:0.5;
 
+}
+#one,two,th{
+    -webkit-transition: all 0.3s ease-out;
+    background: #cbcbcb url() no-repeat;
+    color: #174867;
+    padding: 7px 15px 7px 15px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 2px 4px #888;
+}
+#one,two,th:hover {
+    background: #ebebeb url(images/border.png) no-repeat;
+    color: #67a5cd;
+    padding: 7px 15px 7px 30px;
 }
 @keyframes p {
     from {
@@ -60,7 +86,7 @@ audio{
       cursor: pointer;
       text-decoration: underline;
       height:30px;
-      weight:10px;
+      weight:30px;
 
   }
 .h {
