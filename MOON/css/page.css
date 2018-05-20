@@ -4,11 +4,11 @@ html{
 body{
     position: relative;
     height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#fff));
+
 
 }
 div.transbox{
-    width: 1000px;
+    width: 500px;
     height:500px;
     margin:30px;
     background-color: #ffffff;
@@ -31,9 +31,10 @@ div.transbox{
     display: block;
     text-decoration: none;
     -webkit-box-shadow: 2px 2px 4px #888;
+
 }
 #one,two,th:hover {
-    background: #ebebeb url(images/border.png) no-repeat;
+    background: #ebebeb url() no-repeat;
     color: #67a5cd;
     padding: 7px 15px 7px 30px;
 }
@@ -112,16 +113,38 @@ audio{
     word-wrap: break-word;
     word-break: normal;
 }
-p{
+/p{
     width:60px;
     height:60px;
     background-color:blanchedalmond;
 }
-p:hover{
-    width:90px;
-    height:90px;
-    transition-delay:300ms;
+/p:hover{
+    width:40px;
+    height:40px;
     transition-duration: 1s;
+    -moz-transition: 1s; /* Firefox 4 */
+    transition-timing-function: ease;
+    animation-name:what;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color:cadetblue;
+}
+.words{
+    height:90px;
+    width:90px;
+    position: center;
+    transition-duration: 1s;
+    -moz-transition: 1s; /* Firefox 4 */
+    transition-timing-function: ease;
+
+}
+.words:hover{
+    width:60px;
+    height:60px;
+    transition-duration: 1s;
+    -moz-transition: 1s; /* Firefox 4 */
+    transition-timing-function: ease;
+    transform:rotate(180deg);
     animation-name:what;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -140,5 +163,43 @@ p:hover{
  }
 }
 
+.page-list{
+    margin-top:30px;
+    margin-right:30px;
+    background-color: #ffffff;
+    opacity: 0.3;
+
+}
+.page-list li{
+    list-style: none;
+    background: url("/images/") no-repeat;
+    padding-left: 20px;
+    border-bottom: 1px solid #67a5cd;
+}
+.page-list li a{
+    text-decoration: none;
+    display: flow;
+    padding: 1px;
+    border-left: 10px solid salmon;
+    border-right:10px solid salmon;
+}
+.page-list li a:link{
+    color:silver;
+   opacity: 0.3;
+}
+.page-list li a:hover{
+    color: #ADADAD;
+    background-color: whitesmoke;
+    opacity:0.3;
+}
+.page-list li a:visited{
+    color: blueviolet;
+    background-color: burlywood;
+}
+.page-list li a:active{
+    color: chocolate;
+    background-color: darkolivegreen;
+
+}
 
 
